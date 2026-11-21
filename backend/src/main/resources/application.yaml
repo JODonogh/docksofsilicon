@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: docks-of-silicon
+  jpa:
+    hibernate:
+      ddl-auto: update

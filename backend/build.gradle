@@ -22,6 +22,10 @@ dependencies {
 	implementation libs.spring.boot.starter.jdbc
 	implementation libs.hibernate.core
 	implementation libs.liquibase.core
+	implementation libs.jakarta.persistence.api
+	compileOnly libs.lombok
+	annotationProcessor libs.lombok
+	runtimeOnly libs.postgresql
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
