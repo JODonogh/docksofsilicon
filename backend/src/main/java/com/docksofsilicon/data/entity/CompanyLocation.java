@@ -38,12 +38,12 @@ public class CompanyLocation {
     @Column(name = "is_headquarters", nullable = false)
     private boolean headquarters;
 
-    @Column(name = "local_power_mw", precision = 14, scale = 4)
-    private BigDecimal localPowerMw;
+    @Column(name = "local_power_mw")
+    private float localPowerMw;
 
-    @Column(name = "local_fiber_gbps", precision = 14, scale = 4)
-    private BigDecimal localFiberGbps;
+    @Column(name = "local_fiber_gbps")
+    private float localFiberGbps;
 
-    @Column(name = "local_loyalty", precision = 8, scale = 4)
-    private BigDecimal localLoyalty;
+    @Column(name = "local_loyalty", length = 32)
+    private int localLoyalty;
 }
