@@ -39,16 +39,16 @@ public class CompanyProduct {
     private boolean ai;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "lifecycle_state", nullable = false, length = 32)
+    @Column(name = "lifecycle_state", nullable = false, length = 64)
     private ProductLifecycleState lifecycleState;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "payment_model", nullable = false, length = 32)
+    @Column(name = "payment_model", nullable = false, length = 64)
     private PaymentModel paymentModel;
 
-    @Column(name = "value_score", precision = 12, scale = 4)
-    private BigDecimal valueScore;
+    @Column(name = "value_score")
+    private int valueScore;
 
-    @Column(name = "unit_cost", precision = 19, scale = 4)
-    private BigDecimal unitCost;
+    @Column(name = "unit_cost")
+    private float unitCost;
 }
