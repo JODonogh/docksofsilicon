@@ -32,19 +32,19 @@ public class Company {
     @Column(nullable = false)
     private String name;
 
-    @Column(name = "headquarters_country", length = 2)
+    @Column(name = "headquarters_country", length = 3)
     private String headquartersCountry;
 
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false, length = 32)
+    @Column(nullable = false, length = 64)
     private CompanyStage stage;
 
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false, length = 32)
+    @Column(nullable = false, length = 64)
     private Honesty honesty;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "solvency_state", nullable = false, length = 32)
+    @Column(name = "solvency_state", nullable = false, length = 64)
     private SolvencyState solvencyState;
 
     @Column(precision = 19, scale = 2)
